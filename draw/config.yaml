@@ -3,7 +3,7 @@ parse_config:
     - "modules/zmk/helpers/include"
 
   zmk_preamble: |
-    #include <zmk-helpers/key-labels/34.h>
+    #include <zmk-helpers/key-labels/36.h>
     #define CONFIG_WIRELESS
 
   raw_binding_map:
@@ -61,11 +61,6 @@ parse_config:
   zmk_combos:
     combo_cut: { align: bottom, o: 0.15 }
     combo_ldrsh: { align: top, o: 1.35 }
-
-    combo_lt: { hidden: true }
-    combo_gt: { hidden: true }
-    combo_lbrc: { hidden: true }
-    combo_rbrc: { hidden: true }
 
   zmk_keycode_map:
     # custom mappings
