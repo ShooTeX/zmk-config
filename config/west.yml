@@ -26,6 +26,9 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # support nice_oled and nice_epaper
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
 
   projects:
     - name: zmk
@@ -60,6 +63,11 @@ manifest:
           - hal_stm32
           - lvgl
           - tinycrypt
+
+    # support nice_oled and nice_epaper
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
 
   self:
     path: config
