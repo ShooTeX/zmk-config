@@ -1,21 +1,23 @@
-# This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to
+# the top level board and shield arrays, for more
 # control, add individual board + shield combinations to
 # the `include` property, e.g:
 #
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
+# board: ["nice_nano_v2"]
+# shield: ["corne_left", "corne_right", "settings_reset", "nice_oled"]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
 ---
-# board: ["nice_nano_v2"]
-# shield: ["corne_left", "corne_right", "settings_reset", "nice_oled"]
 include:
   - board: nice_nano_v2
     shield: corne_left nice_oled
   - board: nice_nano_v2
     shield: corne_right nice_oled
+  - board: seeeduino_xiao_ble
+    shield: toucan_left rgbled_adapter nice_view_gem
+  - board: seeeduino_xiao_ble
+    shield: toucan_right rgbled_adapter

@@ -26,16 +26,20 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # support nice_oled and nice_epaper
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: beekeeb
+      url-base: https://github.com/beekeeb
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: geeksville
+      url-base: https://github.com/geeksville
 
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
 
-    # ZMK modules
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
     - name: zmk-auto-layer
@@ -49,8 +53,19 @@ manifest:
     - name: zmk-unicode
       path: modules/zmk/unicode
 
-    # Only source necessary Zephyr modules. Remove this entire section to restore
-    # the default (needed for less common hardware).
+    - name: zmk-keyboard-toucan
+      remote: beekeeb
+      path: modules/zmk/toucan
+      revision: main
+
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
+
+    - name: cirque-input-module
+      remote: geeksville
+      revision: main
+
     - name: zephyr
       remote: zmkfirmware
       revision: v3.5.0+zmk-fixes
@@ -64,7 +79,6 @@ manifest:
           - lvgl
           - tinycrypt
 
-    # support nice_oled and nice_epaper
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main

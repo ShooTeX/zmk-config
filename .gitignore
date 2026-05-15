@@ -1,9 +1,11 @@
 .build
 .direnv
 .west
-modules
+cirque-input-module
+draw/base.yaml
 firmware
+modules
 zephyr
 zmk
 zmk-nice-oled
-draw/base.yaml
+zmk-rgbled-widget
