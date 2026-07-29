@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "zmk_config",
+  "project_id": "36368673-d7f2-4ad3-aaac-ed65831c66f1"
+}
